@@ -70,7 +70,7 @@ do {
         //validasi bulan februari
         if (bulan === 2){
             //validasi hari di tahun kabisat or not
-            if ((tahun % 4 === 0 && hari <= 29) || (tahun % 4 !== 0 && hari <= 28)) {
+            if ((tahun % 4 === 0 && (hari >= 1 && hari <= 29)) || (tahun % 4 !== 0 && (hari >= 1 && hari <= 28))) {
                 bulan = ' Februari '
             } else {
                 pesan += 'Tanggal yang anda masukkan tidak valid\n'

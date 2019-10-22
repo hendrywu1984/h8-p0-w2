@@ -1,0 +1,76 @@
+1.
+Algoritma:
+1. sediakan tempat untuk menampung hasil angka perhitungan yang kita beri nama GAYA
+2. sediakan tempat untuk menampung angka MASSA, kemudian kita masukkan nilai 600
+3. sediakan tempat untuk menampung angka PERCEPATAN, kemudian kita masukkan nilai 2
+4. hitung perkalian MASSA dan PERCEPATAN
+5. masukkan hasil perkalian tadi ke tempat GAYA
+6. tampilkan isi GAYA
+
+Pseudocode:
+STORE “gaya” to any number
+
+STORE “massa” with 600
+STORE “percepatan” with 2
+
+CALCULATE "massa" times "percepatan"
+SET "gaya" value with calculation result
+
+DISPLAY "gaya"
+
+
+
+2.
+Algoritma:
+1. sediakan tempat untuk menampung inputan tahun yang kita beri nama inputTahun
+2. apakah yang diinput (inputTahun) habis dibagi 4 DAN inputTahun habis dibagi 100
+3. apakah yang inputTahun habis dibagi 4 DAN inputTahun habis dibagi 100 DAN inputTahun habis dibagi 400
+4. apakah kondisi no 2 dan no 3 SALAH SATUNYA BENAR, maka tampilkan di monitor bahwa tahun yang diinput adalah tahun KABISAT
+5. apabila kondisi no 2 dan no 3 semua salah, maka tampilkan di monitor bahwa tahun yang diinput adalah BUKAN tahun kabisat
+
+Pseudocode:
+STORE “inputTahun” to any number
+IF ((“inputTahun” mod 4 = 0) AND (“inputTahun” mod 100 != 0)) OR
+((“inputTahun” mod 4 = 0) AND (“inputTahun” mod 100 = 0) AND (“inputTahun” mod 400 = 0)) 
+	DISPLAY “Tahun “ & “inputTahun” & “ adalah tahun kabisat”
+ELSE
+	DISPLAY “Tahun “ & “inputTahun” & “ adalah BUKAN tahun kabisat”
+
+
+3.
+Algoritma:
+1. sediakan tempat untuk menampung total baju, yang kita beri nama totalBaju dan kita isi dengan nilai 20
+2. sediakan tempat untuk menampung perhitungan baju, yang kita beri nama currBaju dan kita isi dengan nilai 1
+3. cek apakah currBaju belum sejumlah totalBaju? jika iya, masukkan baju 1 per 1 sampai sejumlah totalBaju
+4. kemudian tampilkan pesan bahwa "Sudah tidak ada baju yang akan dilaundry lagi"
+
+Pseudocode:
+STORE “totalBaju” with 20
+STORE "currBaju" with 1
+WHILE "currBaju" <= “totalBaju”
+  ADD "currBaju" by 1
+DISPLAY “Sudah tidak ada baju yang akan dilaundry lagi”
+
+
+4.
+Algoritma:
+1. sediakan tempat untuk menampung jumlah siswa, yang kita beri nama totalSiswa dan kita isi dengan nilai 40
+2. sediakan tempat untuk menampung apakah panjang kukunya diperbolehkan (true or false)
+3. sediakan tempat untuk menampung perhitungan siswa, yang kita beri nama currSiswa dan kita isi dengan nilai 1
+4. cek apakah currSiswa belum sejumlah totalSiswa?
+5. jika iya, lakukan pemeriksaan kuku murid apakah panjang atau tidak
+6. jika panjang, tampilkan pesan bahwa "Dihukum"
+7. jika pendek, tampilkan pesan bahwa "Dipuji"
+8. currSiswa kita tambahkan 1 (lanjut ke murid berikutnya sampai currSiswa melebihi total Siswa)
+
+Pseudocode:
+STORE “totalSiswa” with 40
+STORE “panjangKukunya” to boolean
+STORE "currSiswa" with 1
+WHILE "currSiswa" <= “totalSiswa”
+	IF “kukuPanjang” = 1
+		DISPLAY “Dihukum”
+	ELSE
+		DISPLAY “Dipuji”
+ 
+	ADD "currSiswa" by 1

@@ -22,25 +22,25 @@ do {
             //set tanggal yang valid (Jan, Mar, Mei, Jul, Aug, Okt, Des)
             switch (bulan) {
                 case 1:
-                    bulan = ' Januari '
+                    bulan = 'Januari'
                     break;
                 case 3:
-                    bulan = ' Maret '
+                    bulan = 'Maret'
                     break;
                 case 5:
-                    bulan = ' Mei '
+                    bulan = 'Mei'
                     break;
                 case 7:
-                    bulan = ' Juli '
+                    bulan = 'Juli'
                     break;
                 case 8:
-                    bulan = ' Agustus '
+                    bulan = 'Agustus'
                     break;
                 case 10:
-                    bulan = ' Oktober '
+                    bulan = 'Oktober'
                     break;            
                 case 12:
-                    bulan = ' Desember '
+                    bulan = 'Desember'
                     break;
             }
         }
@@ -53,16 +53,16 @@ do {
             //set tanggal yang valid (Apr, Jun, Sept, Nov)
             switch (bulan) {
                 case 4:
-                    bulan = ' April '
+                    bulan = 'April'
                     break;
                 case 6:
-                    bulan = ' Juni '
+                    bulan = 'Juni'
                     break;
                 case 9:
-                    bulan = ' September '
+                    bulan = 'September'
                     break;
                 case 11:
-                    bulan = ' November '
+                    bulan = 'November'
                     break;
             }
         }
@@ -71,7 +71,7 @@ do {
         if (bulan === 2){
             //validasi hari di tahun kabisat or not
             if ((tahun % 4 === 0 && (hari >= 1 && hari <= 29)) || (tahun % 4 !== 0 && (hari >= 1 && hari <= 28))) {
-                bulan = ' Februari '
+                bulan = 'Februari'
             } else {
                 pesan += 'Tanggal yang anda masukkan tidak valid\n'
             }
@@ -80,7 +80,7 @@ do {
         }
     }
 
-    cetak = hari + bulan + tahun;
+    cetak = hari + ' ' + bulan + ' ' + tahun;
     //validasi tahun        
     if (tahun < 1900 || tahun > 2200) pesan += 'Tahun yang Anda masukkan tidak valid\n';
 

@@ -1,5 +1,5 @@
  //1.
- 
+ /*
 var curr = 2;
 
 console.log('LOOPING PERTAMA');
@@ -29,7 +29,7 @@ console.log('LOOPING KEDUA');
 for(var curr=20; curr>=2; curr -= 2){
     console.log (curr.toString() + ' - I will become fullstack developer');
 }
-
+*/
 
 //3.
 for (var i=1; i<= 100; i++){
